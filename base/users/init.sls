@@ -6,3 +6,9 @@ user_bobby:
   - uid: 10001
   - groups:
     - wheel
+
+bobby_key:
+  - ssh_auth.present:
+    - name: Bobby Brown
+    - user: bobby
+    - source: salt://users/keys/bobby.pub
