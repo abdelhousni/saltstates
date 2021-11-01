@@ -1,5 +1,5 @@
 dev:
   '*':
-    - users
+    - users.dev_users
   'web*':
     - apache
