@@ -1,4 +1,4 @@
-user_kat:
+user_kat.douglas:
   - name: kat.douglas
   - fullname: kat.douglas
   - shell: /bin/bash
@@ -7,7 +7,7 @@ user_kat:
   - groups:
     - wheel
 
-bobby_key:
+kat.douglas_key:
   - ssh_auth.present:
     - name: kat.douglas
     - user: kat.douglas
