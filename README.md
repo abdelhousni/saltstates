@@ -3,3 +3,4 @@ salt_class base on Learning SaltStack (https://www.youtube.com/watch?v=OG7MK_s-P
 ## saltstate
 
 [![CI](https://github.com/abdelhousni/saltstates/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/abdelhousni/saltstates/actions/workflows/main.yml)
+[![CI](https://github.com/abdelhousni/saltstates/actions/workflows/main.yml/badge.svg?branch=main&event=push)](https://github.com/abdelhousni/saltstates/actions/workflows/main.yml)
