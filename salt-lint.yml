@@ -1,4 +1,0 @@
-- name: salt-lint
-  # You may pin to the exact commit or the version.
-  # uses: roaldnefs/salt-lint-action@03ef6dfb800c7cce64b187eeaabdba9a90c093d7
-  uses: roaldnefs/salt-lint-action@v0.0.2
