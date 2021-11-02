@@ -10,7 +10,7 @@ index_html:
     - name: '/var/www/html/index.html'
     - user: apache
     - groupe: apache
-    - mode: '0644'
+    - mode: 644
     - source: salt://apache/templates/index.html
 
 # start httpd service
