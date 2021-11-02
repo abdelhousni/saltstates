@@ -14,22 +14,14 @@ on:
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
+# from : https://github.com/roaldnefs/salt-lint-action
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  test:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    name: Salt Lint Action Demo
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      - name: salt-lint
-       # You may pin to the exact commit or the version.
-       # uses: roaldnefs/salt-lint-action@03ef6dfb800c7cce64b187eeaabdba9a90c093d7
-       uses: roaldnefs/salt-lint-action@v0.0.2
+    - uses: actions/checkout@v1
+    - name: Run salt-lint
+      uses: roaldnefs/salt-lint-action@master
+      env:
+        ACTION_STATE_NAME: init.sls
